@@ -2,6 +2,11 @@
 layout: base.html
 title: Home
 ---
+<nav>
+    {% for item in navigation %}
+        <a href="{{ item.url }}">{{ item.label }}</a>
+    {% endfor %}
+</nav>
 <div class="max-w-lg mx-auto mt-6 px-4 text-center">
   <h1 class="font-semibold text-3xl">It’s (j)ust (e)leventy and (t)ailwind</h1>
   <p>…OK, and a few other things; it's still *really* small though.</p>
